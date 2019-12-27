@@ -17,6 +17,9 @@ All the following statistics and examples are based on our labels.
 
 ![examples](examples.png)
 
+Some examples are shown above. The segmentation labels are saved as grey-scale images. The lesions not complied to the AAO guidelines are marked with gray value 127 (line 1, intraretinal hemorrhage) while others are marked with gray value 255.
+
+
 Basic statistics of fundus-dr1593 are summarized as:
 
 | | DR0 | DR1 | DR2 | DR3 |DR4 |
