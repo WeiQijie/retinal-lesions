@@ -15,7 +15,7 @@ For the preserved images, all the lesions labeled are preserved. Notice that the
 Since all the images are from the [Kaggle Diabetic Retinopathy Detection challenge](https://www.kaggle.com/c/diabetic-retinopathy-detection), which originally provides DR grades for each image, DR grades from kaggle may have some differences with DR grades from us.
 All the following statistics and examples are based on our labels.
 
-[examples](examples.pdf)
+![examples](examples.pdf)
 
 Basic statistics of fundus-dr1593 are summarized as:
 
