@@ -26,10 +26,24 @@ Basic statistics of fundus-dr1593 are summarized as:
 | :--   | --: | --:  | --:  | --:  | --:  |
 | # Images | 116 | 337 | 929 | 99 | 62 |
 
+
+## Compare to other public dataset
+
+| Dataset         | Images  | Annotations |
+| :--             | --:     | :--   |
+| [Kaggle](https://www.kaggle.com/c/diabetic-retinopathy-detection)          | 88,702  | Image-level DR grades |
+| [Messidor1](http://www.adcis.net/en/third-party/messidor/)       | 1,200   | Image-level DR grades (Without DR4) |
+| [IDRiD](https://idrid.grand-challenge.org/Data/)  | 516 + 81     | 516 images with image-level DR grades <br> 81 images with pixel-level lesion label (Four lesions) |
+| Retinal-Lesions | 1,593   | Image-level DR grades <br> Pixel-level lesion label (Eight lesions) |
+
 ## Downloads
 
 
 ## Reference
-Q. Wei, X. Li, W. Yu, X. Zhang, Y. Zhang, B. Hu, B. Mo, D. Gong, N. Chen, D. Ding and Y. Chen. Learn to Segment Retinal Lesions and Beyond. arXiv preprint arXiv:2978907, 2019.
-
+@article{wei2019lesion,  
+  title={Learn to segment retinal lesions and beyond},  
+  author={Q. Wei and X. Li and W. Yu and X. Zhang and Y. Zhang and B. Hu and B. Mo and D. Gong and N. Chen and D. Ding and Y. Chen},  
+  journal={arXiv preprint arXiv:2978907},  
+  year={2019}  
+}
 
