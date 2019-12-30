@@ -24,7 +24,7 @@ Basic statistics of fundus-dr1593 are summarized as:
 
 | | DR0 | DR1 | DR2 | DR3 |DR4 |
 | :--   | --: | --:  | --:  | --:  | --:  |
-| # Images | 116 | 337 | 929 | 99 | 62 |
+| # Images | 166 | 337 | 929 | 99 | 62 |
 
 
 ## Compare to other public dataset
