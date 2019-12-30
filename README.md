@@ -1,49 +1,45 @@
-# fundus-dr1593
+# Retinal-Lesions
 
-Fundus-dr1593 containing 1593 color fundus images with expert labels. 
-Each image is labeled with a diabetic retinopathy (DR) grade and segmentations of related lesions.
-DR grades follow the [American Academy of Ophthalmology (AAO) guidelines for DR grading](https://www.aao.org/preferred-practice-pattern/diabetic-retinopathy-ppp-updated-2017).
-For lesion segmentation, eight lesions are included: **microaneurysm**, **intraretinal hemorrhage**, **hard exudate**, **cotton-wool spot**, **vitreous hemorrhage**, **preretinal hemorrhage**, **neovascularization** and **fibrous proliferation**.
+Retinal-Lesions is a novel color fundus image dataset for evaluating retinal lesion segmentation, classification and diabetic retinopathy (DR) grading. See our arxiv paper [Learn to Segment Retinal Lesions and Beyond](https://arxiv.org/abs/1912.11619) for details.
 
-For expert labeling, a panel of 45 experienced ophthalmologists was formed. Each annotator marks out lesions in a given 
-image using either ellipses or polygons and accordingly grade the image. Lesion annotation and DR grading from a single 
-image are somewhat subjective. So for quality control, each image was assigned to at least three annotators. 
-Images receiving consistent DR grades, i.e., the majority vote for a specific grade, are preserved.
+## Highlights
 
-For the preserved images, all the lesions labeled are preserved. Notice that the lesions and DR grades may not complied to the AAO guidelines (For example, a image is labeled with microaneurysm for lesion and DR0 for grading). The lesions not complied to the AAO guidelines are specially marked with gray value 127 while others are marked with gray value 255. 
++ Over 1.5K images selected from the public [Kaggle DR Detection dataset](https://www.kaggle.com/c/diabetic-retinopathy-detection);
++ Five DR grades (DR0 / DR1 / DR2 / DR3 / DR4), re-labeled by a panel of 45 experienced ophthalmologists;
++ Eight retinal lesion classes, including *microaneurysm*, *intraretinal hemorrhage*, *hard exudate*, *cotton-wool spot*, *vitreous hemorrhage*, *preretinal hemorrhage*, *neovascularization* and *fibrous proliferation*;
++ Over 34K expert-labeled pixel-level lesion segments;
++ Muti-task, i.e., *lesion segmentation*, *lesion classification*, and *DR grading*.
 
-Since all the images are from the [Kaggle Diabetic Retinopathy Detection challenge](https://www.kaggle.com/c/diabetic-retinopathy-detection), which originally provides DR grades for each image, DR grades from kaggle may have some differences with DR grades from us.
-All the following statistics and examples are based on our labels.
 
 ![examples](examples.png)
 
-Some examples are shown above. The segmentation labels are saved as grey-scale images. The lesions not complied to the AAO guidelines are marked with gray value 127 (line 1, microaneurysm).
 
-
-Basic statistics of fundus-dr1593 are summarized as:
-
-| | DR0 | DR1 | DR2 | DR3 |DR4 |
-| :--   | --: | --:  | --:  | --:  | --:  |
-| # Images | 166 | 337 | 929 | 99 | 62 |
-
-
-## Compare to other public dataset
+### Comparison to existing public datasets
 
 | Dataset         | Images  | Annotations |
 | :--             | --:     | :--   |
-| [Kaggle](https://www.kaggle.com/c/diabetic-retinopathy-detection)          | 88,702  | Image-level DR grades |
-| [Messidor1](http://www.adcis.net/en/third-party/messidor/)       | 1,200   | Image-level DR grades (Without DR4) |
-| [IDRiD](https://idrid.grand-challenge.org/Data/)  | 516 + 81     | 516 images with image-level DR grades <br> 81 images with pixel-level lesion label (Four lesions) |
-| Retinal-Lesions | 1,593   | Image-level DR grades <br> Pixel-level lesion label (Eight lesions) |
-
-## Downloads
+| [Kaggle](https://www.kaggle.com/c/diabetic-retinopathy-detection)          | 88,702  | + Image-level DR grades |
+| [Messidor1](http://www.adcis.net/en/third-party/messidor/)       | 1,200   | + Image-level DR grades (no DR4) |
+| [IDRiD](https://idrid.grand-challenge.org/Data/)  | 597     | + 516 images with image-level DR grades <br> + 81 images with pixel-level lesion labels (4 lesion classes) |
+| **Retinal-Lesions** | 1,593   | + Image-level DR grades (DR0: 166, DR1: 337, DR2: 929, DR3: 99, DR4: 62) <br> + Pixel-level lesion labels (8 lesion classes) |
 
 
-## Reference
+
+## Download
+
+Data is freely available upon request. Please submit your request via [Google Form](https://docs.google.com/forms/d/1qQdfxjK6igFopdAVu4Eagc-fRRYhK2Tja0fuyRXi8Z8)
+
+*Note*: Each image has been cropped by a [preprocessing algorithm](https://doi.org/10.1007/978-3-030-05710-7_42) to a square image containing only the field-of-view, and resized to 896x896. There are few lesion annotations not complied to the [American Academy of Ophthalmology (AAO) guidelines for DR grading](https://www.aao.org/preferred-practice-pattern/diabetic-retinopathy-ppp-updated-2017). While excluded from experiments, they are included in the provided segmentation masks, yet marked with a specific gray value (127). 
+
+
+
+## Citation
+
+If you use the Retinal-Lesions dataset, please cite the following paper:
+
 @article{wei2019lesion,  
   title={Learn to segment retinal lesions and beyond},  
   author={Qijie Wei and Xirong Li and Weihong Yu and Xiao Zhang and Yongpeng Zhang and Bojie Hu and Bin Mo and Di Gong and Ning Chen and Dayong Ding and Youxin Chen},  
   journal={arXiv preprint arXiv:1912.11619},  
   year={2019}  
 }
-
