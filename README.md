@@ -8,7 +8,7 @@ Retinal-Lesions is a novel color fundus image dataset for evaluating retinal les
 + Five DR grades (DR0 / DR1 / DR2 / DR3 / DR4), re-labeled by a panel of 45 experienced ophthalmologists;
 + Eight retinal lesion classes, including *microaneurysm*, *intraretinal hemorrhage*, *hard exudate*, *cotton-wool spot*, *vitreous hemorrhage*, *preretinal hemorrhage*, *neovascularization* and *fibrous proliferation*;
 + Over 34K expert-labeled pixel-level lesion segments;
-+ Muti-task, i.e., *lesion segmentation*, *lesion classification*, and *DR grading*.
++ Multi-task, i.e., *lesion segmentation*, *lesion classification*, and *DR grading*.
 
 
 ![examples](examples.png)
