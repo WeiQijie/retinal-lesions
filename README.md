@@ -29,7 +29,7 @@ Retinal-Lesions is a novel color fundus image dataset for evaluating retinal les
 
 Data is freely available upon request. Please submit your request via [Google Form](https://docs.google.com/forms/d/1qQdfxjK6igFopdAVu4Eagc-fRRYhK2Tja0fuyRXi8Z8)
 
-*Note*: Each image has been cropped by a [preprocessing algorithm](https://doi.org/10.1007/978-3-030-05710-7_42) to a square image containing only the field-of-view, and resized to 896x896. There are few lesion annotations not complied to the [American Academy of Ophthalmology (AAO) guidelines for DR grading](https://www.aao.org/preferred-practice-pattern/diabetic-retinopathy-ppp-updated-2017). While excluded from experiments, they are included in the provided segmentation masks, yet marked with a specific gray value (127). 
+*Note*: Each image has been cropped by a [preprocessing algorithm](https://doi.org/10.1007/978-3-030-05710-7_42) to a square image containing only the field-of-view, and resized to 896x896. There are few lesion annotations not complied to the [American Academy of Ophthalmology (AAO) guidelines for DR grading](https://www.aao.org/preferred-practice-pattern/diabetic-retinopathy-ppp-updated-2017). While excluded from experiments, they are included in the provided segmentation masks, with a specific gray value (127). 
 
 
 
