@@ -31,6 +31,7 @@ Data is freely available upon request. Please submit your request via [Google Fo
 
 *Note*: Each image has been cropped by a [preprocessing algorithm](https://doi.org/10.1007/978-3-030-05710-7_42) to a square image containing only the field-of-view, and resized to 896x896. There are few lesion annotations not complied to the [American Academy of Ophthalmology (AAO) guidelines for DR grading](https://www.aao.org/preferred-practice-pattern/diabetic-retinopathy-ppp-updated-2017). While excluded from experiments, they are included in the provided segmentation masks, with a specific gray value (127). 
 
++ 2020-03-23: [Auto-localization of the optic disc and the fovea](od_fovea_autoloc.txt) by spatially constrained Faster R-CNN, Yang et al., [Joint Localization of Optic Disc and Fovea in Ultra-widefield Fundus Images](https://link.springer.com/chapter/10.1007/978-3-030-32692-0_52), MLMI@MICCAI 2019
 
 
 ## Citation
