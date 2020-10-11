@@ -36,7 +36,14 @@ Data is freely available upon request. Please submit your request via [Google Fo
 
 ## Citation
 
-If you use the Retinal-Lesions dataset, please cite the following paper:
+If you use the Retinal-Lesions dataset, please cite the following paper(s):
+
+@inproceedings{icpr2020-LesionNet,
+title={Learn to Segment Retinal Lesions and Beyond},
+author={Qijie Wei and Xirong Li and Weihong Yu and Xiao Zhang and Yongpeng Zhang and Bojie Hu and Bin Mo and Di Gong and Ning Chen and Dayong Ding and Youxin Chen},
+booktitle={International Conference on Pattern Recognition (ICPR)},
+year={2020},
+}
 
 @article{wei2019lesion,  
   title={Learn to segment retinal lesions and beyond},  
@@ -44,3 +51,5 @@ If you use the Retinal-Lesions dataset, please cite the following paper:
   journal={arXiv preprint arXiv:1912.11619},  
   year={2019}  
 }
+
+
