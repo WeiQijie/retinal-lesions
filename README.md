@@ -1,6 +1,6 @@
 # Retinal-Lesions
 
-Retinal-Lesions is a novel color fundus image dataset for evaluating retinal lesion segmentation, classification and diabetic retinopathy (DR) grading. See our arxiv paper [Learn to Segment Retinal Lesions and Beyond](https://arxiv.org/abs/1912.11619) for details.
+Retinal-Lesions is a novel color fundus image dataset for evaluating retinal lesion segmentation, classification and diabetic retinopathy (DR) grading. See our ICPR2020 paper [Learn to Segment Retinal Lesions and Beyond](https://arxiv.org/abs/1912.11619) for details.
 
 ## Highlights
 
@@ -36,13 +36,12 @@ Data is freely available upon request. Please submit your request via [Google Fo
 
 ## Citation
 
-If you use the Retinal-Lesions dataset, please cite the following paper(s):
+If you use the Retinal-Lesions dataset, please cite the following paper:
 
 @inproceedings{icpr2020-LesionNet, 
   title={Learn to Segment Retinal Lesions and Beyond},  
   author={Qijie Wei and Xirong Li and Weihong Yu and Xiao Zhang and Yongpeng Zhang and Bojie Hu and Bin Mo and Di Gong and Ning Chen and Dayong Ding and Youxin Chen},   
   booktitle={International Conference on Pattern Recognition (ICPR)},  
-  note={https://arxiv.org/abs/1912.11619},    
   year={2020}  
 }
 
